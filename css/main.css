@@ -1,0 +1,309 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+body .contain{
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color:rgb(48, 48, 49);
+}
+body .head{
+    width: 100%;
+    background-color:rgb(48, 48, 49);
+    margin-top: 0px;
+    padding-top: 20px;
+}
+.head .nave{
+width: 80%;
+margin: auto;
+padding: 20px 0px;
+background-color: rgba(255, 1, 1, 0.5);
+align-items:center;
+border-radius: 30px;
+}
+.head .nave h1{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffffff;
+    text-shadow: 0 0 5px #444;
+}
+ .container{
+    width: 80%;
+    margin: 50px auto;
+}
+ h1{
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffffff;
+    text-shadow: 0 0 5px #444;
+}
+
+.card{
+    padding: 20px;
+    background-color: #4e4b77; 
+    border-radius: 20px;
+}
+.container .card-body{
+    padding: 15px;
+    background-color: rgb(156, 24, 24);
+    border-radius: 20px;
+}
+.form .container .form-group {
+display: block;
+margin: 10px 0px;
+}
+
+.form .container .form-group .form-control{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px ;
+    border-radius: 10px;
+    border: 1px solid black;
+    transition: all 0.5s;
+    font-size: 25px;
+}
+
+.form .container .form-group .form-control::placeholder{
+    color:#444;
+    font-size: 20px;
+    font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.form .container .form-group .form-control:focus{
+    outline: 1px solid rgb(76, 196, 243);
+    border: 0;
+    box-shadow: 0px 0px 10px blue;
+}
+
+.row{
+    display: list-item;
+    justify-content: space-around;
+}
+
+
+.form .container .form-group .btn{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: burlywood;
+    border: 1px solid gray;
+    transition: all 0.5s;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.form .container .form-group .btn:hover{
+    background-color:rgb(214, 141, 45) ;
+    color: white;
+    cursor: pointer;
+    font-size: larger;
+    transform: scale(1.01,1.01);
+}
+
+.form .container .form-group .btn-updat{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: rgb(238, 115, 66);
+    border: 1px solid gray;
+    transition: all 0.5s;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.form .container .form-group .btn-updat:hover{
+    background-color:rgb(240, 43, 17) ;
+    color: white;
+    cursor: pointer;
+    font-size: larger;
+    transform: scale(1.01,1.01);
+}
+
+.data .container .card .btn{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: burlywood;
+    border: 1px solid gray;
+    transition: all 0.5s;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.data .container .card .btn:hover{
+    background-color:rgb(44, 107, 35) ;
+    color: white;
+    cursor: pointer;
+    font-size: larger;
+    transform: scale(1.01,1.01);
+}
+
+
+
+.data table{
+    text-align: center;
+    width: 100%;
+    background-color: rgb(156, 24, 24); 
+} 
+.data table  tr{
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+}
+
+.data table thead tr{
+    border: 1px solid white;
+    padding:0px 10px;
+
+}
+.data table thead tr th{
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    width: 100%;
+    padding: 10px;
+    font-weight: bolder;
+    font-size:16px;
+  
+   
+}
+.data table tbody tr {
+    border: 1px solid white;
+    border-top: 0px;
+    padding: 10px;
+}
+.data table  tr td{
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    padding: 10px;
+    width: 100%;
+    color: white;
+}
+.data table  tr td i {
+    color: blue;
+}
+.data table  tr td i:hover{
+    color: red;
+    font-size: x-large;
+}
+.data table tbody tr a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+.hide{
+    display: none;
+}
+
+@media(max-width:1250px){
+    .data table thead tr th{
+        font-size:13.5px;
+    }
+
+    .data table tbody tr td{
+        border-left: 1px solid white;
+        border-right: 1px solid white;
+        width:15%;
+        padding: 10px;
+        font-weight: bolder;
+        font-size :14px;
+      
+    }
+}
+
+@media(max-width:950px){
+    .container{
+        width:90%;
+        margin: 50px auto;
+    }
+     h1{
+        font-size:30px;
+    }
+    
+    .card{
+        padding: 20px;
+        background-color: #4e4b77; 
+        border-radius: 20px;
+    }
+ 
+   
+    .data table{
+        text-align: center;
+        width: 100%;
+        background-color: rgb(156, 24, 24); 
+   
+    } 
+    .data table  tr{
+        display:flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        font-weight: bold;
+        
+     
+    }
+    
+    .data table thead tr{
+        border: 1px solid white;
+        padding:0px 10px;
+    
+    }
+    .data table thead tr th{
+        border-left: 1px solid white;
+        border-right: 1px solid white;
+        width:15%;
+        padding: 10px;
+        font-weight: bolder;
+        font-size:15px;
+      
+    }
+    
+    .data table tbody tr {
+        border: 1px solid white;
+        border-top: 0px;
+        padding: 10px;
+    }
+
+    .data table tbody tr a{
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .data table tbody tr td{
+        border-left: 1px solid white;
+        border-right: 1px solid white;
+        width:15%;
+        padding: 10px;
+        font-weight: bolder;
+        font-size :15px;
+      
+    }
+   
+}
+@media(max-width:570px){
+  
+    .data table thead tr th{
+        border-left: 1px solid white;
+        border-right: 1px solid white;
+        width:20%;
+        padding: 10px;
+        font-weight: bolder;
+        font-size:12px;
+      
+    }
+
+
+   
+    .data table tbody tr td{
+        border-left: 1px solid white;
+        border-right: 1px solid white;
+        width:20%;
+        padding: 10px;
+        font-weight: bolder;
+        font-size :12px;
+      
+    }
+   
+}

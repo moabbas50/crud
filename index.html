@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+</head>
+
+<body>
+    <div class="head">
+        <div class="nave">
+            <h1>EL EZZ MARKET <i class="fa-solid fa-store"></i></h1>
+        </div>
+    </div>
+    <section class="contain">
+        <section class="form">
+            <div class="container">
+                <h1>Add New Product </h1>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="form-group">
+                            <input id="title" class="form-control" type="text" placeholder="Product Name">
+                        </div>
+                        <div id="allcost" class="row">
+                            <div class="item">
+                                <div class="form-group">
+                                    <input class="form-control" type="number" placeholder="Price">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="form-group">
+                                    <input class="form-control" type="number" placeholder="Tax %">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="form-group">
+                                    <input class="form-control" type="number" placeholder="Discount %  ">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="form-group">
+                                    <input id="count" class="form-control" type="number" placeholder="Quantity">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="form-group">
+                                    <input class="form-control" type="number" readonly placeholder="Net Price">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input id="depart" class="form-control" type="text" placeholder="Depatment">
+                        </div>
+                        <div class="form-group">
+                            <button class="btn">Add </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            </div>
+        </section>
+    
+        <section class="data">
+            <div class="container">
+                <h1>List Of Products</h1>
+                <div class="card">
+                    <button class="btn">clear</button>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>Product`s Name</th>
+                                <th>Price</th>
+                                <th>Tax</th>
+                                <th>Discount</th>
+                                <th>Net Price</th>
+                                <th>Quantity</th>
+                                <th>Total Price</th>
+                                <th>Department</th>
+                                <th style="color: blue;">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </section>
+    <script src="./js/app.js"></script>
+</body>
+</html>
