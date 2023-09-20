@@ -14,8 +14,8 @@ let indexid ;
 
 let products =[];
   
-let validationState1 = true ;
-let validationState2 = true ;
+let validationState1 = false ;
+let validationState2 = false ;
 
 for(let i=0 ; i < allinput.length ; i++ ){
     allinput[i].addEventListener("keyup",()=>{
@@ -85,6 +85,8 @@ let createproduct =()=>{
         clearinput();
         renderData();
         localStorage.setItem("products",JSON.stringify(products)); 
+        validationState1= false;
+        validationState2= false;
     }
     
 }
