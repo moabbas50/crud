@@ -13,20 +13,22 @@ let indexid ;
 
 
 let products =[];
-  
+
 let validationState1 = false ;
 let validationState2 = false ;
 
 for(let i=0 ; i < allinput.length ; i++ ){
     allinput[i].addEventListener("keyup",()=>{
-         if(allinput[i].value == "" ){
-    allspan[i].classList.remove("invalid");
-    allinput[i].classList.add("invalid-span"); 
-    validationState1 = false;
+         if(allinput[i].value == ""){
+            allspan[i].classList.remove("invalid");
+            allinput[i].classList.add("invalid-span"); 
+            validationState1 = false;
          }else{
             allspan[i].classList.add("invalid");
             allinput[i].classList.remove("invalid-span");    
-            validationState1 = true;
+         }
+         if (allinput[0].value != "" && allinput[1].value != "" && allinput[2].value != "" &&allinput[3].value != "" &&allinput[4].value != ""&&allinput[6].value != ""){
+            validationState1 = true ;
          }
      })
  }
@@ -39,8 +41,10 @@ for(let i=0 ; i < allinput.length ; i++ ){
            validationState2 = false;
          }else{
             allspaninvaled[i].classList.add("invalid-number");
-            numbinputt[i].classList.remove("invalid-span");  
-            validationState2 = true;  
+            numbinputt[i].classList.remove("invalid-span");    
+         }
+         if (numbinputt[0].value != "" && numbinputt[1].value != "" && numbinputt[2].value != "" &&numbinputt[3].value != "" &&numbinputt[4].value != ""&&numbinputt[6].value != ""){
+            validationState1 = true ;
          }
      })
  }
