@@ -43,7 +43,7 @@ for(let i=0 ; i < allinput.length ; i++ ){
             allspaninvaled[i].classList.add("invalid-number");
             numbinputt[i].classList.remove("invalid-span");    
          }
-         if (numbinputt[0].value != "" && numbinputt[1].value != "" && numbinputt[2].value != "" &&numbinputt[3].value != "" &&numbinputt[4].value != ""&&numbinputt[6].value != ""){
+         if (numbinputt[0].value >= 0 && numbinputt[1].value >= 0 && numbinputt[2].value >= 0 &&numbinputt[3].value >= 0){
             validationState1 = true ;
          }
      })
