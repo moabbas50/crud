@@ -27,7 +27,7 @@ for(let i=0 ; i < allinput.length ; i++ ){
             allspan[i].classList.add("invalid");
             allinput[i].classList.remove("invalid-span");    
          }
-         if (allinput[0].value != "" && allinput[1].value != "" && allinput[2].value != "" &&allinput[3].value != "" &&allinput[4].value != ""&&allinput[6].value != ""){
+         if (allinput[0].value != "" && allinput[1].value != "" && allinput[2].value != "" &&allinput[3].value != "" &&allinput[4].value != ""&&allinput[5].value != ""&&allinput[4].value != ""&&allinput[6].value != ""){
             validationState1 = true ;
          }
      })
@@ -44,7 +44,7 @@ for(let i=0 ; i < allinput.length ; i++ ){
             numbinputt[i].classList.remove("invalid-span");    
          }
          if (numbinputt[0].value >= 0 && numbinputt[1].value >= 0 && numbinputt[2].value >= 0 &&numbinputt[3].value >= 0){
-            validationState1 = true ;
+            validationState2 = true ;
          }
      })
  }
@@ -62,7 +62,8 @@ for(i=0;i<allcost.length ;i++){
         let  taxvlu = +((tax/100) * price) ;
         let discount= +(allcost[2].value)
         let  discountvlu = (discount/100) * (taxvlu +price );
-        allcost[4].value = ((taxvlu +price ) -  discountvlu) ;
+        allcost[4].value = ((taxvlu +price ) -  discountvlu).toFixed(2) ;
+      
     });
 };
 let createproduct =()=>{
